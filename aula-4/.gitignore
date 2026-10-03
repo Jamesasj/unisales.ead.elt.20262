@@ -1,0 +1,31 @@
+# Segredos e configuracoes locais
+.env
+.env.*
+!.env.example
+
+# Logs e arquivos gerados pelo Airflow
+logs/*
+!logs/.gitkeep
+airflow.cfg
+airflow.db
+webserver_config.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes e caches locais
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Saida gerada pelo ETL
+/data/resultado_etl.json
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
